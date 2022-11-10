@@ -13,14 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Thread{
-            getFilms()
-        }.start()
-
-        Thread{
-            getFilmById("avenger-endgame")
-        }.start()
-
+        
 
     }
 
