@@ -1,5 +1,6 @@
 package com.albertoherjim.movies.data.remote
 
+import com.albertoherjim.movies.data.remote.Api.FilmApiModel
 import com.albertoherjim.movies.domain.Film
 
 fun FilmApiModel.toDomain(): Film {
