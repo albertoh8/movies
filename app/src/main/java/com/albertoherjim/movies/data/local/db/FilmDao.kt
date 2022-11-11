@@ -14,4 +14,6 @@ interface FilmDao {
 
     @Query("SELECT * FROM $TABLE_NAME WHERE filmId = :filmId")
     fun getFilm(filmId: String): FilmEntity?
+
+
 }
