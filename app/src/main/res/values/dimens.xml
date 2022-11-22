@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     //Icons
-    <dimen name="icon_size_s">26dp</dimen>
+    <dimen name="icon_size_xs">22dp</dimen>
+    <dimen name="icon_size_s">24dp</dimen>
     <dimen name="icon_size_m">38dp</dimen>
-    <dimen name="icon_size_l">50dp</dimen>
+    <dimen name="icon_size_l">46dp</dimen>
+    <dimen name="icon_size_xl">50dp</dimen>
 
     //Images
-    <dimen name="image_size_s">64dp</dimen>
-    <dimen name="image_size_m">96dp</dimen>
+    <dimen name="image_size_xs">64dp</dimen>
+    <dimen name="image_size_s">96dp</dimen>
+    <dimen name="image_size_m">120dp</dimen>
     <dimen name="image_size_l">138dp</dimen>
+    <dimen name="image_size_xl">180dp</dimen>
+    <dimen name="image_size_xxl">250dp</dimen>
 
     //Text
     <dimen name="text_size_xs">12sp</dimen>
     <dimen name="text_size_s">14sp</dimen>
-    <dimen name="text_size_m">20sp</dimen>
-    <dimen name="text_size_l">26sp</dimen>
+    <dimen name="text_size_m">18sp</dimen>
+    <dimen name="text_size_l">24sp</dimen>
+    <dimen name="text_size_xl">26sp</dimen>
 
     //Padding
     <dimen name="padding_size_xs">8dp</dimen>

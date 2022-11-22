@@ -4,7 +4,7 @@ import com.albertoherjim.movies.data.remote.Api.FilmApiModel
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class ApiClient {
+class RemoteApiClient {
 
     private val baseEndPoints: String = "https://movies-and-shows-api.cyclic.app"
     private val apiService: ApiService

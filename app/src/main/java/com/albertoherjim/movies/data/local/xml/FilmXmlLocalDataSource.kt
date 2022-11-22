@@ -18,7 +18,7 @@ class FilmXmlLocalDataSource(private val sharedPreferences: SharedPreferences) :
     }
 
 
-    override fun getFilm(filmId: String): Film? {
+    override fun getFilm(filmId: String): Film {
         val jsonFilm = sharedPreferences.getString(filmId, null)
         return gson.fromJson(jsonFilm, Film::class.java)
 
@@ -28,6 +28,10 @@ class FilmXmlLocalDataSource(private val sharedPreferences: SharedPreferences) :
         return sharedPreferences.all.map {
             gson.fromJson(it.value as String, Film::class.java)
         }
+    }
+
+    override fun save(films: List<Film>) {
+        TODO("Not yet implemented")
     }
 
     fun saveFilms(filmsList: MutableList<Film>) {

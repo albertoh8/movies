@@ -14,7 +14,7 @@ fun FilmEntity.toDomain(): Film {
     )
 }
 
-fun Film.toEntity(filmId:String): FilmEntity{
+fun Film.toEntity(): FilmEntity{
     return FilmEntity(
         this.id,
         this.title,
