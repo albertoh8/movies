@@ -23,7 +23,9 @@ class FilmsMemLocalDataSource(private val dataStore: MemDataStore<Film>):
         return movies
     }
 
-    override fun save(films: List<Film>) {
-        TODO("Not yet implemented")
+    override fun save(films: List<Film> ) {
+        films.forEach { film->
+            dataStore.put(film.id, film)
+        }
     }
 }
