@@ -31,7 +31,12 @@ class FilmXmlLocalDataSource(private val sharedPreferences: SharedPreferences) :
     }
 
     override fun save(films: List<Film>) {
-        TODO("Not yet implemented")
+        val jsonNews = gson.toJson(films, Film::class.java)
+        val edit = sharedPreferences.edit()
+        films.forEach { film ->
+            edit.putString(film.id, jsonNews)
+            edit.apply()
+        }
     }
 
     fun saveFilms(filmsList: MutableList<Film>) {
