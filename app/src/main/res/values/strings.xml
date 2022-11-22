@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Movies</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="perfil">Elige tu perfil</string>
+    <string name="user1">Usuario 1</string>
+    <string name="user2">Usuario 2</string>
+    <string name="user3">Usuario 3</string>
+    <string name="user4">Usuario 4</string>
+
 </resources>

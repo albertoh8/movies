@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icon_size_l"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/padding_size_s"
+        android:padding="@dimen/padding_size_xs"
+        android:textSize="@dimen/text_size_m"
+        android:textAlignment="center"
+        android:text="@string/welcome"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/perfil"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/padding_size_xxl"
+        android:layout_height="@dimen/image_size_s"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/padding_size_s"
+        android:textSize="@dimen/text_size_s"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="@string/perfil"/>
+
+    <Button
+        android:id="@+id/perfil1"
+        android:layout_width="@dimen/image_size_m"
+        android:layout_height="@dimen/image_size_m"
+        app:layout_constraintTop_toBottomOf="@+id/perfil"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/user1"
+        android:textSize="@dimen/text_size_xs"
+        android:layout_marginTop="@dimen/padding_size_m"
+        android:layout_marginLeft="@dimen/padding_size_xxl"/>
+
+    <Button
+        android:id="@+id/perfil2"
+        android:layout_width="@dimen/image_size_m"
+        android:layout_height="@dimen/image_size_m"
+        app:layout_constraintTop_toBottomOf="@+id/perfil"
+        app:layout_constraintStart_toEndOf="@id/perfil1"
+        android:text="@string/user2"
+        android:textSize="@dimen/text_size_xs"
+        android:layout_marginTop="@dimen/padding_size_m"
+        android:layout_marginLeft="@dimen/padding_size_xxl"/>
+
+    <Button
+        android:id="@+id/perfil4"
+        android:layout_width="@dimen/image_size_m"
+        android:layout_height="@dimen/image_size_m"
+        app:layout_constraintTop_toBottomOf="@+id/perfil1"
+        app:layout_constraintStart_toStartOf="@id/perfil1"
+        android:text="@string/user3"
+        android:textSize="@dimen/text_size_xs"
+        android:layout_marginTop="@dimen/padding_size_xl"/>
+
+    <Button
+        android:id="@+id/perfil3"
+        android:layout_width="@dimen/image_size_m"
+        android:layout_height="@dimen/image_size_m"
+        app:layout_constraintTop_toBottomOf="@+id/perfil2"
+        app:layout_constraintStart_toStartOf="@id/perfil2"
+        android:text="@string/user4"
+        android:textSize="@dimen/text_size_xs"
+        android:layout_marginTop="@dimen/padding_size_xl"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
