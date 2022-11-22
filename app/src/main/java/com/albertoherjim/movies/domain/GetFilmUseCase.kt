@@ -9,6 +9,7 @@ class GetFilmUseCase(
 
         val list = films.map { film ->
             FilmFeed(
+                film.id,
                 film.poster,
                 film.title,
                 film.plot,
@@ -22,6 +23,7 @@ class GetFilmUseCase(
 
 
     data class FilmFeed(
+        val filmId: String,
         val poster: String,
         val title: String,
         val plot: String,

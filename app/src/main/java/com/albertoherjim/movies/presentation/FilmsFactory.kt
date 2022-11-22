@@ -11,14 +11,16 @@ import com.albertoherjim.movies.domain.FilmRepository
 import com.albertoherjim.movies.domain.GetFilmDetailUseCase
 import com.albertoherjim.movies.domain.GetFilmUseCase
 
+
+
 class FilmsFactory {
 
     fun getFilmsViewModel(applicationContext: Context) =
         FilmsFeedViewModel(getFilmUseCase(applicationContext))
 
 
-    fun getFilmsDetailViewModel(applicationContext: Context): FilmsDetailsViewModel {
-        return FilmsDetailsViewModel(
+    fun getFilmsDetailViewModel(applicationContext: Context): FilmDetailViewModel {
+        return FilmDetailViewModel(
             getFilmDetailUseCase(applicationContext)
         )
     }

@@ -1,11 +1,12 @@
 package com.albertoherjim.movies.presentation.adapterFeed
 
+
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.albertoherjim.extensions.loadUrl
 import com.albertoherjim.movies.databinding.ViewItemFilmFeedBinding
 import com.albertoherjim.movies.domain.GetFilmUseCase
-import com.albertoherjim.movies.presentation.FilmsDetailActivity
+import com.albertoherjim.movies.presentation.FilmDetailActivity
 
 class FilmsFeedViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
 
@@ -17,8 +18,8 @@ class FilmsFeedViewHolder(private val view: View) : RecyclerView.ViewHolder(view
         binding.rating.text = film.rating
         view.setOnClickListener {
             view.context.startActivity(
-                FilmsDetailActivity.getIntent(
-                    view.context, film.poster
+                FilmDetailActivity.getIntent(
+                    view.context, film.filmId
                 )
             )
         }
