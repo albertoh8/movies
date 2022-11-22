@@ -8,6 +8,14 @@ class FilmsDbLocalDataSource(private val dao: FilmDao):FilmLocalDataSource {
         dao.saveFilm(film.toEntity(filmId))
     }
 
-    override fun getFilm(filmId: String)=
-        dao.getFilm(filmId)?.toDomain()
+    override fun getFilm(filmId: String): Film? {
+        return dao.getFilm(filmId)?.toDomain()
+    }
+
+    override fun getFilms(): List<Film> {
+        return dao.getFilms().map {
+            it.toDomain()
+        }
+    }
+
 }
