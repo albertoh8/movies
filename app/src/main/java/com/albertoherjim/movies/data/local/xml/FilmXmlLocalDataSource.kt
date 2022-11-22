@@ -1,13 +1,13 @@
 package com.albertoherjim.movies.data.local.xml
 
 import android.content.SharedPreferences
-import com.albertoherjim.movies.data.local.FIlmLocalDataSource
+import com.albertoherjim.movies.data.local.FilmLocalDataSource
 import com.albertoherjim.movies.domain.Film
 import com.google.gson.Gson
 
 class FilmXmlLocalDataSource(private val sharedPreferences: SharedPreferences) :
-    FIlmLocalDataSource {
-    private val editor = sharedPreferences.edit()
+    FilmLocalDataSource {
+
     private val gson = Gson()
 
     override fun saveFilm(film: Film) {
