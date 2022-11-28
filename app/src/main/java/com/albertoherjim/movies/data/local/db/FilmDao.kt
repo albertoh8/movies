@@ -18,6 +18,4 @@ interface FilmDao {
     @Query("SELECT * FROM $TABLE_NAME")
     fun getFilms(): List<FilmEntity>
 
-
-
 }
