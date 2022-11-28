@@ -18,7 +18,7 @@ class FilmXmlLocalDataSource(private val sharedPreferences: SharedPreferences) :
     }
 
 
-    override fun getFilm(filmId: String): Film? {
+    override fun getFilm(filmId: String): Film {
         val jsonFilm = sharedPreferences.getString(filmId, null)
         return gson.fromJson(jsonFilm, Film::class.java)
 
@@ -27,6 +27,15 @@ class FilmXmlLocalDataSource(private val sharedPreferences: SharedPreferences) :
     override fun getFilms(): List<Film> {
         return sharedPreferences.all.map {
             gson.fromJson(it.value as String, Film::class.java)
+        }
+    }
+
+    override fun save(films: List<Film>) {
+        val jsonNews = gson.toJson(films, Film::class.java)
+        val edit = sharedPreferences.edit()
+        films.forEach { film ->
+            edit.putString(film.id, jsonNews)
+            edit.apply()
         }
     }
 

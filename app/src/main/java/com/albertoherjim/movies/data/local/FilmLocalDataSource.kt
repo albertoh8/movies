@@ -7,4 +7,5 @@ interface FilmLocalDataSource {
     fun saveFilm(filmId: String, film: Film)
     fun getFilm(filmId: String): Film?
     fun getFilms(): List<Film>
+    fun save(films: List<Film>)
 }
